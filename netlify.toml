@@ -1,0 +1,15 @@
+toml
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/*"
+  to = "https://script.google.com/macros/s/AKfycbwQUB4ILgEOgYNZJs8jLLx5ZKoxIdLi4snBNaL_ZZR2XOXHlWK3zCOwxnSIzi50KDgHng/exec:splat"
+  status = 200
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
